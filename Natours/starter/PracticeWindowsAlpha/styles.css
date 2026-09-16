@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #777;
+    /* margin: 20px; */
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right, rgba(180, 36, 36, 0.8), rgba(255, 4, 4, 0.8));
+    background-size: cover;
+    background-position: top;
+   position: relative;
+   border: 2px solid black;
+}
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+    font-family: "Tourney";
+    text-transform: uppercase;
+    /* background-image: linear-gradient(to bottom, rgba(180, 152, 15, 0.8), rgba(0,0,0,.8)); */
+    /* border-radius: 25px;
+    background-size: cover;
+    background-position: top;
+    border: 2px solid black; */
+    
+    
+}
+
+.text-main {
+    display: block;
+    animation: moveInLeft;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    color: white;
+    font-size: 5em;
+    background-color: blue;
+}
+.text-sub {
+    margin-top: 10px;
+    display: block;
+    letter-spacing: 3px;
+    animation: moveInLeft;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+@keyframes moveInLeft  {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
