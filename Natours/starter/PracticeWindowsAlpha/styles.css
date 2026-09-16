@@ -9,7 +9,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #777;
-    /* margin: 20px; */
+    margin: 20px;
 }
 
 .header {
@@ -19,6 +19,7 @@ body {
     background-position: top;
    position: relative;
    border: 2px solid black;
+   
 }
 .text-box {
     position: absolute;
@@ -67,4 +68,17 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+.nav {
+    position: relative;
+    left: 10%;
+}
+.link-box {
+    background-color: aliceblue;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 10px;
+    letter-spacing: 10px;
+    text-decoration: none;
+    
 }
