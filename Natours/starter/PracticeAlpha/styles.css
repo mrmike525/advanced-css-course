@@ -1,0 +1,22 @@
+.sectionAlpha {
+height: 95vh;
+background-image: linear-gradient(to top, rgba(173, 30, 30, 0.8), rgba(161, 161, 161, 0.8));
+position: relative;
+clip-path: polygon(0% 30%, 50% 30%, 100% 30%, 100% 60%, 60% 60%, 0% 60%);
+}
+.text-box {
+position: absolute;
+top: 50%;
+left: 50%;
+
+transform: translate(-50%, -50%);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 2em;
+font-weight: 600;
+}
+.sectionAlphaMain {
+display: block
+}
+.sectionAlphaSub {
+display: block;
+}

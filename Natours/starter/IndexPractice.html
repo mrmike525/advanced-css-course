@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="Practice.css">
 </head>
 <body>
+    <nav>
+        <section class="nav-container">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact</a>
+        </section>
+        <section class="nav-container2">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact</a>
+        </section>
+    </nav>
     <section class="favorite">
         <div class="favorite-text">
             <span class="favorite-text-main">Michael Loves Abby!</span>
@@ -18,7 +30,54 @@
             <span class="text-sub">
                 forever
             </span>
+            <a href="#" class="btn btn-white">Click For LOVE!</a>
         </div>
     </section>
+    <div class="heart">
+        <div>
+        <span class="emoji"> 😍</span>
+    </div>
+    </div>
+    <section class="middle">
+        <nav class="second-nav">
+            <a href="#" class="second-links">Home</a>
+            <a href="#" class="second-links">about</a>
+            <a href="#" class="second-links">contact</a>
+
+        </nav>
+        <div class="hidden-menu">
+        <span class="star">*</span>
+        <ul class="ul-alpha hidden">
+            <li class="list-item">Eat</li>
+        <li class="list-item">Sleep</li>
+        <li class="list-item">Code</li>
+        <li class="list-item">Repeat</li>
+        <li class="list-item">Learn</li>
+    </ul>
+    </div>
+    </section>
+    <section class="card">
+        <div class="card-text-top">
+            <span>&#9828 Ace</span>
+
+        </div>
+                <div class="card-text-bottom">
+            <span>Ace</span>
+
+        </div>
+    </section>
+    <script>
+        const ulList = document.querySelector('.ul-alpha');
+        ulList.addEventListener('click', (e)=> {
+            e.target.classList.add('hidden')
+        });
+        const star = document.querySelector('.star')
+        star.addEventListener('mouseover', (e)=>{
+            ulList.classList.remove('hidden')
+        });
+        star.addEventListener('mouseleave', (e)=>{
+            ulList.classList.add('hidden')
+        })
+    </script>
 </body>
 </html>
